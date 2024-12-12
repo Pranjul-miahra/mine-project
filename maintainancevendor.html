@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Membership and User Management</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #d3d3d3;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            width: 90%;
+            margin: 20px auto;
+            background-color: #f2f2f2;
+            border-radius: 10px;
+            padding: 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            position: relative;
+        }
+        .header-button {
+            background-color: white;
+            color: #4CAF50;
+            border: 2px solid #4CAF50;
+            border-radius: 10px;
+            padding: 10px 20px;
+            position: absolute;
+            cursor: pointer;
+        }
+        .header-button:hover {
+            background-color: #4CAF50;
+            color: white;
+        }
+        .home-btn {
+            top: 20px;
+            left: 20px;
+        }
+        .logout-btn {
+            top: 20px;
+            right: 20px;
+        }
+        .sidebar {
+            position: absolute;
+            top: 100px;
+            left: 20px;
+            display: flex;
+            flex-direction: column;
+        }
+        .sidebar-button {
+            background-color: white;
+            color: #4CAF50;
+            border: 2px solid #4CAF50;
+            border-radius: 10px;
+            padding: 10px 20px;
+            margin: 10px 0;
+            cursor: pointer;
+        }
+        .sidebar-button:hover {
+            background-color: #4CAF50;
+            color: white;
+        }
+        .main-content {
+            margin-top: 80px;
+            display: flex;
+            justify-content: center;
+            gap: 50px;
+        }
+        .action-group {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .action-button {
+            background-color: white;
+            color: #4CAF50;
+            border: 2px solid #4CAF50;
+            border-radius: 10px;
+            padding: 10px 20px;
+            margin: 10px 10px;
+            cursor: pointer;
+            width: 150px;
+        }
+        .action-button:hover {
+            background-color: #4CAF50;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <button class="header-button home-btn">Home</button>
+        <button class="header-button logout-btn">LogOut</button>
+        
+        <div class="sidebar">
+            <button class="sidebar-button">Membership</button>
+            <button class="sidebar-button">User Management</button>
+        </div>
+        
+        <div class="main-content">
+            <div class="action-group">
+                <button class="action-button">Add</button>
+                <button class="action-button">Update</button>
+            </div>
+            <div class="action-group">
+                <button class="action-button">Add</button>
+                <button class="action-button">Update</button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

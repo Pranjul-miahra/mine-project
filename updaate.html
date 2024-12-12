@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Status Update</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #d3d3d3;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            width: 90%;
+            margin: 20px auto;
+            background-color: #f2f2f2;
+            border-radius: 10px;
+            padding: 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+        .header {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 20px;
+        }
+        .header div {
+            background-color: #3f51b5;
+            color: white;
+            padding: 10px 20px;
+            border-radius: 5px;
+            text-align: center;
+            width: 100px;
+            cursor: pointer;
+        }
+        .status-container {
+            background-color: #3f51b5;
+            color: white;
+            padding: 20px;
+            border-radius: 20px;
+            margin: 20px auto;
+            width: 50%;
+        }
+        .status-container h2 {
+            margin-bottom: 20px;
+        }
+        .status-option {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            background-color: #8fa1f5;
+            margin: 10px 0;
+            padding: 10px;
+            border-radius: 10px;
+        }
+        .status-option input[type="radio"] {
+            margin-right: 10px;
+        }
+        .update-btn {
+            background-color: #3f51b5;
+            color: white;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            border: none;
+            font-size: 16px;
+        }
+        .update-btn:hover {
+            background-color: #334396;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <div>Home</div>
+            <div>LogOut</div>
+        </div>
+        <div class="status-container">
+            <h2>Update</h2>
+            <div class="status-option">
+                <label>
+                    <input type="radio" name="status" value="received"> Received
+                </label>
+            </div>
+            <div class="status-option">
+                <label>
+                    <input type="radio" name="status" value="ready"> Ready for Shipping
+                </label>
+            </div>
+            <div class="status-option">
+                <label>
+                    <input type="radio" name="status" value="out-for-delivery"> Out for Delivery
+                </label>
+            </div>
+        </div>
+        <button class="update-btn">Update</button>
+    </div>
+</body>
+</html>

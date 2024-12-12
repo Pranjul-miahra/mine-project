@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Order Status</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #d3d3d3;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            width: 90%;
+            margin: 20px auto;
+            background-color: #f2f2f2;
+            border-radius: 10px;
+            padding: 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+        .header {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 20px;
+        }
+        .header div {
+            background-color: #3f51b5;
+            color: white;
+            padding: 10px 20px;
+            border-radius: 5px;
+            text-align: center;
+            width: 100px;
+            cursor: pointer;
+        }
+        .status-title {
+            background-color: #3f51b5;
+            color: white;
+            padding: 10px 20px;
+            border-radius: 5px;
+            margin: 20px auto;
+            width: fit-content;
+            font-size: 18px;
+        }
+        .details-container {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 20px;
+            margin-top: 20px;
+        }
+        .detail-item {
+            background-color: #3f51b5;
+            color: white;
+            padding: 15px 10px;
+            border-radius: 5px;
+            font-size: 16px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <div>Home</div>
+            <div>LogOut</div>
+        </div>
+        <div class="status-title">User Order Status</div>
+        <div class="details-container">
+            <div class="detail-item">Name</div>
+            <div class="detail-item">E-mail</div>
+            <div class="detail-item">Address</div>
+            <div class="detail-item">Status</div>
+        </div>
+    </div>
+</body>
+</html>

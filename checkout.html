@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Order Details</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #d3d3d3; /* Light grey background */
+        }
+        .container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 20px;
+        }
+        .title, .subtitle {
+            background-color: #3f51b5;
+            color: white;
+            padding: 10px;
+            border-radius: 5px;
+            margin: 10px 0;
+            text-align: center;
+        }
+        .title {
+            font-size: 1.5em;
+        }
+        .form-container {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 15px;
+            background-color: #ffffff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            margin-top: 20px;
+        }
+        .form-container div {
+            background-color: #3f51b5;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            border-radius: 5px;
+        }
+        .form-container input, .form-container select {
+            width: 90%;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            margin: 5px auto;
+            display: block;
+            font-size: 1em;
+        }
+        .order-btn {
+            background-color: #3f51b5;
+            color: white;
+            padding: 15px 30px;
+            border-radius: 5px;
+            font-size: 1.2em;
+            margin-top: 20px;
+            cursor: pointer;
+            text-align: center;
+        }
+        .order-btn:hover {
+            background-color: #5c6bc0; /* Slightly lighter blue */
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="title">Item</div>
+        <div class="subtitle">Details</div>
+
+        <div class="form-container">
+            <div>Name</div>
+            <div><input type="text" placeholder="Enter your name"></div>
+            
+            <div>Number</div>
+            <div><input type="text" placeholder="Enter your number"></div>
+            
+            <div>E-mail</div>
+            <div><input type="email" placeholder="Enter your email"></div>
+            
+            <div>Payment Method</div>
+            <div>
+                <select>
+                    <option value="credit-card">Credit Card</option>
+                    <option value="debit-card">Debit Card</option>
+                    <option value="paypal">PayPal</option>
+                    <option value="cod">Cash on Delivery</option>
+                </select>
+            </div>
+            
+            <div>Address</div>
+            <div><input type="text" placeholder="Enter your address"></div>
+            
+            <div>State</div>
+            <div><input type="text" placeholder="Enter your state"></div>
+            
+            <div>City</div>
+            <div><input type="text" placeholder="Enter your city"></div>
+            
+            <div>Pin Code</div>
+            <div><input type="text" placeholder="Enter your pin code"></div>
+        </div>
+
+        <div class="order-btn">Order Now</div>
+    </div>
+</body>
+</html>

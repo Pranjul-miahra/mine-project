@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Vendor Dashboard</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #d3d3d3;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+
+    .container {
+      width: 90%;
+      background-color: #f0f0f0;
+      border: 2px solid #000;
+      border-radius: 8px;
+      padding: 20px;
+      text-align: center;
+    }
+
+    .header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 20px;
+    }
+
+    .header button {
+      background-color: #5cb85c;
+      color: white;
+      border: none;
+      padding: 8px 15px;
+      border-radius: 5px;
+      font-size: 0.9rem;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    .header button:hover {
+      background-color: #4cae4c;
+    }
+
+    .navigation {
+      background-color: #337ab7;
+      color: white;
+      padding: 10px 0;
+      margin: 20px 0;
+      border-radius: 5px;
+      font-size: 1.2rem;
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+    }
+
+    .vendor-section {
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 20px;
+    }
+
+    .vendor-card {
+      background-color: #337ab7;
+      color: white;
+      width: 22%;
+      border-radius: 8px;
+      padding: 20px;
+      text-align: center;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    }
+
+    .vendor-card button {
+      background-color: #5cb85c;
+      color: white;
+      border: none;
+      padding: 8px 15px;
+      border-radius: 5px;
+      font-size: 0.9rem;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    .vendor-card button:hover {
+      background-color: #4cae4c;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="header">
+      <button>Home</button>
+      <button>LogOut</button>
+    </div>
+    <div class="navigation">
+      <div>Vendor</div>
+      <div>Florist</div>
+    </div>
+    <div class="vendor-section">
+      <div class="vendor-card">
+        <h3>Vendor 1</h3>
+        <p>Contact Details</p>
+        <button>Shop Item</button>
+      </div>
+      <div class="vendor-card">
+        <h3>Vendor 2</h3>
+        <p>Contact Details</p>
+        <button>Shop Item</button>
+      </div>
+      <div class="vendor-card">
+        <h3>Vendor 3</h3>
+        <p>Contact Details</p>
+        <button>Shop Item</button>
+      </div>
+      <div class="vendor-card">
+        <h3>Vendor 4</h3>
+        <p>Contact Details</p>
+        <button>Shop Item</button>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

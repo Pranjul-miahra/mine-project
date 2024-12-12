@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping Cart</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #d3d3d3; /* Light grey background */
+        }
+        .header {
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            background-color: #ffffff;
+            padding: 10px;
+            border-bottom: 2px solid #ccc;
+        }
+        .header div {
+            padding: 10px 20px;
+            border: 1px solid green;
+            border-radius: 5px;
+            background-color: white;
+            cursor: pointer;
+        }
+        .header div:hover {
+            background-color: #e8f5e9; /* Light green hover */
+        }
+        .title {
+            text-align: center;
+            background-color: #90caf9; /* Light blue */
+            padding: 10px;
+            border-radius: 5px;
+            font-size: 1.5em;
+            margin: 20px;
+        }
+        .cart-table {
+            display: grid;
+            grid-template-columns: repeat(6, 1fr);
+            gap: 10px;
+            text-align: center;
+            margin: 20px;
+            padding: 20px;
+            background-color: #ffffff;
+            border-radius: 5px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+        .cart-table div {
+            background-color: #3f51b5;
+            color: white;
+            padding: 10px;
+            border-radius: 5px;
+        }
+        .cart-table div img {
+            width: 100%;
+            height: auto;
+            border-radius: 5px;
+        }
+        .action-btn {
+            padding: 10px;
+            border: 1px solid green;
+            border-radius: 5px;
+            background-color: white;
+            color: black;
+            cursor: pointer;
+        }
+        .action-btn:hover {
+            background-color: #e8f5e9; /* Light green hover */
+        }
+        .summary {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #3f51b5;
+            color: white;
+            padding: 20px;
+            margin: 20px;
+            border-radius: 5px;
+            font-size: 1.2em;
+        }
+        .checkout {
+            text-align: center;
+            margin: 20px;
+        }
+        .checkout button {
+            padding: 15px 30px;
+            border: 1px solid green;
+            border-radius: 5px;
+            background-color: white;
+            color: black;
+            font-size: 1.2em;
+            cursor: pointer;
+        }
+        .checkout button:hover {
+            background-color: #e8f5e9; /* Light green hover */
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <div>Home</div>
+        <div>View Product</div>
+        <div>Request Item</div>
+        <div>Product Status</div>
+        <div>LogOut</div>
+    </header>
+
+    <div class="title">Shopping Cart</div>
+
+    <div class="cart-table">
+        <!-- Header row -->
+        <div>Image</div>
+        <div>Name</div>
+        <div>Price</div>
+        <div>Quantity</div>
+        <div>Total Price</div>
+        <div>Action</div>
+
+        <!-- Product row -->
+        <div><img src="https://via.placeholder.com/100" alt="Product Image"></div>
+        <div>Product Name</div>
+        <div>100/-</div>
+        <div>2</div>
+        <div>200/-</div>
+        <div><button class="action-btn">Remove</button></div>
+    </div>
+
+    <div class="summary">
+        <div>Grand Total</div>
+        <div>200/-</div>
+        <button class="action-btn">Delete All</button>
+    </div>
+
+    <div class="checkout">
+        <button>Proceed to CheckOut</button>
+    </div>
+</body>
+</html>

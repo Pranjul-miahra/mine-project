@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Popup - Thank You</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #d3d3d3;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .popup {
+            width: 400px;
+            background-color: #ffffff;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            padding: 20px;
+            text-align: center;
+        }
+        .header, .thank-you {
+            font-size: 1.5em;
+            margin-bottom: 10px;
+        }
+        .header {
+            color: #3f51b5;
+            font-weight: bold;
+        }
+        .button {
+            background-color: #3f51b5;
+            color: white;
+            padding: 10px;
+            margin: 5px;
+            border-radius: 5px;
+            font-size: 1em;
+            border: none;
+            cursor: pointer;
+            width: 100%;
+        }
+        .button:hover {
+            background-color: #5c6bc0;
+        }
+        .grid-container {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 10px;
+            margin-top: 20px;
+        }
+        .grid-item {
+            background-color: #3f51b5;
+            color: white;
+            padding: 10px;
+            border-radius: 5px;
+            text-align: center;
+        }
+        .continue {
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="popup">
+        <div class="header">PopUp</div>
+        <div class="thank-you">THANK YOU</div>
+        <button class="button">Total Amount</button>
+        <div class="grid-container">
+            <div class="grid-item">Name</div>
+            <div class="grid-item">Number</div>
+            <div class="grid-item">E-mail</div>
+            <div class="grid-item">Payment Method</div>
+            <div class="grid-item">Address</div>
+            <div class="grid-item">State</div>
+            <div class="grid-item">City</div>
+            <div class="grid-item">PinCode</div>
+        </div>
+        <button class="button continue">Continue Shopping</button>
+    </div>
+</body>
+</html>

@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Layout</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #d3d3d3; /* Light grey background */
+        }
+        .header, .products {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 20px;
+        }
+        .header {
+            background-color: #ffffff; /* White background for header */
+            border-bottom: 2px solid #ccc;
+        }
+        .header div, .header button {
+            padding: 10px;
+            border: 1px solid green;
+            border-radius: 5px;
+            background-color: white;
+            cursor: pointer;
+        }
+        .header div:hover, .header button:hover {
+            background-color: #e8f5e9; /* Light green hover */
+        }
+        .vendor-name {
+            padding: 10px 20px;
+            background-color: #3f51b5;
+            color: white;
+            border-radius: 10px;
+            font-size: 1.2em;
+        }
+        .product-grid {
+            display: flex;
+            justify-content: space-evenly;
+            flex-wrap: wrap;
+            margin: 20px;
+            gap: 20px;
+        }
+        .product-card {
+            background-color: #3f51b5;
+            color: white;
+            border-radius: 10px;
+            padding: 20px;
+            text-align: center;
+            width: 200px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+        .product-card button {
+            margin-top: 10px;
+            padding: 10px;
+            border: 1px solid green;
+            border-radius: 5px;
+            background-color: white;
+            color: black;
+            cursor: pointer;
+        }
+        .product-card button:hover {
+            background-color: #e8f5e9; /* Light green hover */
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <div>Home</div>
+        <div>Products</div>
+        <div class="vendor-name">Vendor Name</div>
+        <button>LogOut</button>
+    </header>
+
+    <main>
+        <div class="product-grid">
+            <div class="product-card">
+                <h3>Product 1</h3>
+                <p>Price: $10</p>
+                <button>Add to Cart</button>
+            </div>
+            <div class="product-card">
+                <h3>Product 2</h3>
+                <p>Price: $15</p>
+                <button>Add to Cart</button>
+            </div>
+            <div class="product-card">
+                <h3>Product 3</h3>
+                <p>Price: $20</p>
+                <button>Add to Cart</button>
+            </div>
+            <div class="product-card">
+                <h3>Product 4</h3>
+                <p>Price: $25</p>
+                <button>Add to Cart</button>
+            </div>
+        </div>
+    </main>
+</body>
+</html>
